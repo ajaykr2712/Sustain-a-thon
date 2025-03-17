@@ -12,3 +12,7 @@ Ready to dive in? Here’s how to set up the project locally:
    ```bash
    git clone https://github.com/ajaykr2712/Sustain-a-thon.git
    cd Sustain-a-thon
+
+2. **Problem Statement**📝
+
+   ## Development of a Centralized Platform for Wildlife, Biodiversity, and Conservation Projects across India.
