@@ -27,15 +27,6 @@ This file contains a curated list of key resources with href links relevant to t
 - [Conservation International GitHub Repositories](https://github.com/ConservationInternational) - General conservation tools adaptable to India.
 - [yashchitroda/Wildlife-Conservation GitHub Repository](https://github.com/yashchitroda/Wildlife-Conservation) - Indian-specific repository on conservation importance.
 
-### Technological Stack Documentation
-- [React Documentation Official Guide](https://reactjs.org/docs/getting-started.html) - Frontend framework for dynamic interfaces.
-- [Flask Web Framework Documentation](https://flask.palletsprojects.com/en/2.0.x/) - Python-based backend framework.
-- [Node.js Official Documentation](https://nodejs.org/en/docs/) - Alternative backend for real-time features.
-- [PostgreSQL Official Tutorials](https://www.postgresql.org/docs/) - Relational database documentation.
-- [MongoDB Official Manual](https://docs.mongodb.com/manual/) - NoSQL database documentation.
-- [Leaflet JavaScript Library Documentation](https://leafletjs.com/reference.html) - Open-source mapping tool.
-- [Google Maps API Developer Guide](https://developers.google.com/maps/documentation) - API for geographical visualizations.
-
 ### Best Practices and Conservation Strategies
 - [WildTeam Conservation Best Practice Stakeholder Engagement](https://www.wildteam.org.uk/conservation-best-practice-stakeholder-engagement) - Guidelines for engaging stakeholders.
 - [Multipost Digital Blog Role of Social Media in Wildlife Conservation](https://www.multipostdigital.com/blog/ihq2ugvlo1g2wx8melmrm850qun2zg) - Using social media for awareness.
