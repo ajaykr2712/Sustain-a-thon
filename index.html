@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5NT9V19GMW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5NT9V19GMW');
+</script>
+  <meta charset="UTF-8">
+  <title>WildLife Conservation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+
+<style type="text/css">
+ /* imprt for ANIMAL TAP FONT */
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+/* imprt for ANIMAL TAP FONT */
+.navbar {
+  height: 80px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  z-index: 100;
+  transition: background-color 1s ease 0s;
+}
+
+.navbar-default .navbar-brand {
+  margin-top: 10px;
+  color: black;
+}
+.navbar-default .navbar-brand:hover {
+  color: #C57ED3;
+  border: 1px solid #C57ED3;
+}
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  margin: 10px 5px 5px 5px;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
+  color: #C57ED3;
+  border: 1px solid #C57ED3;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
+  color: #C57ED3;
+}
+.navbar-default .navbar-toggle {
+  border-color: #C57ED3;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #490D40;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  color: #C57ED3;
+  background-color: #C57ED3;
+}
+.navbar-default .navbar-collapse.collapse.in ul {
+  background-color: #490D40;
+}
+
+/* Solid class attached on scroll past first section */
+.navbar.solid {
+  background-color: black;
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px grey;
+}
+.navbar.solid .navbar-brand {
+  color: #C57ED3;
+  transition: color 1s ease 0s;
+}
+.navbar.solid .navbar-nav > li > a {
+  color: #C57ED3;
+  transition: color 1s ease 0s;
+}
+
+
+
+
+
+
+/*ALL PAGE CSS EXCEPT NAV BAR*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: none;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+  
+
+
+html { max-height: 100%; }
+
+body { height: 100%; }
+
+.slideshow {
+  list-style: none;
+  z-index: 1;
+}
+
+.slideshow li span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  opacity: 0;
+  z-index: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-animation: imageAnimation 48s linear infinite 0s;
+  -moz-animation: imageAnimation 48s linear infinite 0s;
+  animation: imageAnimation 48s linear infinite 0s;
+}
+
+.no-cssanimations .slideshow li span { opacity: 1; }
+
+
+
+@-webkit-keyframes 
+imageAnimation { 0% {
+ opacity: 0;
+ -webkit-animation-timing-function: ease-in;
+}
+ 12.5% {
+ opacity: 1;
+ -webkit-animation-timing-function: ease-out;
+}
+ 25% {
+ opacity: 1;
+}
+ 37.5% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 0;
+}
+}
+
+@-moz-keyframes 
+imageAnimation { 0% {
+ opacity: 0;
+ -moz-animation-timing-function: ease-in;
+}
+ 12.5% {
+ opacity: 1;
+ -moz-animation-timing-function: ease-out;
+}
+ 25% {
+ opacity: 1;
+}
+ 37.5% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 0;
+}
+}
+
+@keyframes 
+imageAnimation { 0% {
+ opacity: 0;
+ -webkit-animation-timing-function: ease-in;
+ -moz-animation-timing-function: ease-in;
+ animation-timing-function: ease-in;
+}
+ 12.5% {
+ opacity: 1;
+ -webkit-animation-timing-function: ease-out;
+ -moz-animation-timing-function: ease-out;
+ animation-timing-function: ease-out;
+}
+ 25% {
+ opacity: 1;
+}
+ 37.5% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 0;
+}
+}
+
+@-webkit-keyframes 
+titleAnimation { 0% {
+ opacity: 0;
+}
+ 12.5% {
+ opacity: 1;
+}
+ 25% {
+ opacity: 1;
+}
+ 37.5% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 0;
+}
+}
+
+@-moz-keyframes 
+titleAnimation { 0% {
+ opacity: 0;
+}
+ 12.5% {
+ opacity: 1;
+}
+ 25% {
+ opacity: 1;
+}
+ 37.5% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 0;
+}
+}
+
+@keyframes 
+titleAnimation { 0% {
+ opacity: 0;
+}
+ 12.5% {
+ opacity: 1;
+}
+ 25% {
+ opacity: 1;
+}
+ 37.5% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 0;
+}
+}
+
+
+.slideshow li:nth-child(1) span { background-image: url(images/komodo1.jpg); }
+
+.slideshow li:nth-child(2) span {
+  background-image: url(images/toucan1.jpg);
+  -webkit-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  animation-delay: 6s;
+}
+
+.slideshow li:nth-child(3) span {
+  background-image: url(images/alligator1.jpg);
+  -webkit-animation-delay: 12s;
+  -moz-animation-delay: 12s;
+  animation-delay: 12s;
+}
+
+.slideshow li:nth-child(4) span {
+  background-image: url(images/lion1.jpg);
+  -webkit-animation-delay: 18s;
+  -moz-animation-delay: 18s;
+  animation-delay: 18s;
+}
+
+.slideshow li:nth-child(5) span {
+  background-image: url(images/frog1.jpg);
+  -webkit-animation-delay: 24s;
+  -moz-animation-delay: 24s;
+  animation-delay: 24s;
+}
+
+.slideshow li:nth-child(6) span {
+  background-image: url(images/sealion4.jpg);
+  -webkit-animation-delay: 30s;
+  -moz-animation-delay: 30s;
+  animation-delay: 30s;
+}
+
+.slideshow li:nth-child(7) span {
+  background-image: url(images/armadillo4.jpg);
+  -webkit-animation-delay: 36s;
+  -moz-animation-delay: 36s;
+  animation-delay: 36s;
+}
+
+.slideshow li:nth-child(8) span {
+  background-image: url(images/oryx3.jpg);
+  -webkit-animation-delay: 42s;
+  -moz-animation-delay: 42s;
+  animation-delay: 42s;
+}
+
+body{
+    background-image:url('images/blue bg.jpg');
+    margin: 0;
+  }
+  .i{
+    background-color: #02c39a;
+    padding: 1%;
+    border-radius: 30px;
+    font-size: 20px;
+    width: 40%;
+    
+  }
+    figure a img {
+      width: 100%;
+  }
+
+  .slideshow-container {
+  position: relative;
+  background-image: url('images/blue bg.jpg') ;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 10px;
+  margin-right: 4%;
+  margin-left: 4%;
+  color: black;
+  font-weight: bold;
+  font-size: 40px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+font-size: 40px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: limegreen;
+  color: white;
+  text-decoration: none;
+}
+figcaption{
+  text-transform: capitalize;
+  color: white;
+}
+
+/* MEDIA SCREENS */
+
+ @media screen and (max-width: 768px) {
+      /* Adjust styles for smaller screens here */
+      .navbar {
+        height: 60px;
+      }
+
+      .navbar-brand {
+        margin-top: 5px;
+        font-size: 18px;
+      }
+
+      .navbar-default .navbar-nav > li > a {
+        margin: 5px 5px 5px 5px;
+      }
+
+      .navbar.solid {
+        background-color: black;
+      }
+
+      .navbar.solid .navbar-brand,
+      .navbar.solid .navbar-nav > li > a {
+        color: #C57ED3;
+      }
+
+      .slideshow li span {
+        height: 100%;
+      }
+
+      .slideshow li span {
+        background-size: cover;
+        background-position: 50% 50%;
+      }
+
+      .mySlides {
+        padding: 20px;
+      }
+
+      .prev,
+      .next {
+        margin-top: -15px;
+        padding: 5px;
+        font-size: 20px;
+      }
+
+      .dot-container {
+        margin-top: 10px;
+      }
+
+      .dot {
+        height: 10px;
+        width: 10px;
+        margin: 0 2px;
+      }
+    }
+
+
+/* MEDIA SCREENS */
+
+</style>
+
+</head>
+<ul class="slideshow">
+  <li> <span>Slide One</span> </li>
+  <li> <span>Slide Two</span> </li>
+  <li> <span>Slide Three</span> </li>
+  <li> <span>Slide Four</span> </li>
+  <li> <span>Slide Five</span> </li>
+  <li> <span>Slide Six</span> </li>
+  <li> <span>Slide Seven</span> </li>
+  <li> <span>Slide Eight</span> </li>
+  
+</ul>
+<body>
+<!-- partial:index.partial.html -->
+
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+       
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <!-- <li><a href="#">HOME</a></li>--> 
+  <!--<li><a href="#animals">ANIMALS</a></li>--> 
+  <!--<li><a href="Classification/all habitats.html">HABITATS</a></li>-->
+  <li><a href="Classification/live cam.html">LIVE CAM</a></li>
+  <li><a href="Classification/save animals.html">SAVE ANIMALS</a></li>
+  <li><a href="#conservation" >CONSERVATION STATUS</a></li>
+  <li><a href="Classification/all hybrids.html" >HYBRIDS</a></li>
+  <!--<li><a href="#facts">FACTS</a></li>-->
+  <li><a href="#Animal Tap">GAMES</a></li>
+  <li><a href="Classification/unique.html">VIEW UNIQUE</a></li>
+  <li><a href="Classification/encyclopedia.html">ENCYCLOPEDIA</a></li>
+  <li><a href="donate.html">DONATE</a></li>
+  <li><a href="#">LOGIN</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<div class="image">
+  
+   
+</div>
+<div class="about">
+  <div style="padding-top:75%;">
+<h1 align="center" id="animals" style="font-size: 40px; color:black;">ANIMALS</h1>
+<h2 align="center" style="color: yellow;">VIEW BY TYPES</h2>
+
+<div align="center">
+  <table>
+    <tr>
+      <td style="text-align: center;">
+       <figure>
+         <a href="Classification/reptile.html">
+           <img src="images/reptiles.jpg" />
+         </a>
+         <figcaption>REPTILES</figcaption>
+       </figure>
+      </td>
+      <td style="text-align: center;">
+       <figure>
+         <a href="Classification/mammals.html">
+           <img src="images/mammals.jpg" />
+         </a>
+         <figcaption>MAMMALS</figcaption>
+       </figure>
+      </td>
+      <td style="text-align: center;">
+       <figure>
+         <a href="Classification/birds.html">
+           <img src="images/birds.jpg" />
+         </a>
+         <figcaption>BIRDS</figcaption>
+       </figure>
+      </td>
+     </tr>
+   </table>
+</div>
+<br><br><br><br><br>
+
+
+<div align="center">
+  <table>
+    <tr>
+      <td style="text-align: center;">
+       <figure>
+         <a href="Classification/arthropod.html">
+           <img src="images/arthropods.jpg" />
+         </a>
+         <figcaption>ARTHROPODS</figcaption>
+       </figure>
+      </td>
+      <td style="text-align: center;">
+       <figure>
+         <a href="Classification/amphibians.html">
+           <img src="images/amphibians.jpg" />
+         </a>
+         <figcaption>AMPHIBIANS</figcaption>
+       </figure>
+      </td>
+      <td style="text-align: center;">
+       <figure>
+         <a href="Classification/fish.html">
+           <img src="images/fish.jpg" />
+         </a>
+         <figcaption>FISHES</figcaption>
+       </figure>
+      </td>
+     </tr>
+   </table>
+</div>
+<br><br><br><br><br>
+<div align="center">
+<button class="i" onclick="document.location='Classification/all animals.html'">EXPLORE ALL ANIMALS</button>&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="i" onclick="document.location='Classification/all habitats.html'">EXPLORE ANIMALS HABITAT'S</button>
+</div>
+<br><br><br><br><br>
+<hr>
+<br>
+<div align="left" id="Animal Tap">
+  <h1 align="center" style="color: red; font-family: 'Press Start 2P'">Best Featured</h1>
+  <br><br>
+<table style="width:100%;">
+  <tr>
+    <td style="text-align: center;">
+      <h3 align="center" style="font-size:35px; color:pink;">Capture the live Actions</h3>
+      <figure align="center">
+        <a href="Classification/live cam.html">
+          <img src="images/Livecam.jpg" style="width: 150px; height: 120px;" />
+        </a>
+      </figure>
+    </td>
+
+    <td style="text-align: center;">
+      <h3 align="center" style="font-size:35px; color:pink;">Explore Our Dino World</h3>
+      <figure align="center">
+        <a href="JURASSIC/index.html">
+          <img src="JURASSIC/images/logo.jpg" style="width: 150px; height: 120px;" />
+        </a>
+      </figure>
+    </td>
+  </tr>
+
+<!--ROW 2-->
+  <tr style="height:500px;">
+    <td style="text-align: center;">
+     
+      <figure align="center">
+        <a href="Classification/all hybrids.html">
+          <img src="images/hybrids.jpg" style="width: 250px; height: 150px;" />
+        </a>
+      </figure>
+       <h3 align="center" style="font-size:35px; color:pink;">Mesmerizing world of Hybrids</h3>
+    </td>
+
+    <td style="text-align: center;">
+     
+      <figure align="center">
+        <a href="Classification/unique.html">
+          <img src="images/Unique.jpg" style="width: 250px; height: 150px;" />
+        </a>
+         <h3 align="center" style="font-size:35px; color: pink;">Witness our Unique Animals</h3>
+      </figure>
+    </td>
+  </tr>
+</table>
+
+</div>
+<br>
+<hr>
+
+<!--ANIMAL TAP -->
+<div align="left" id="Animal Tap">
+  <h1 align="center" style="color:yellow; font-family: 'Press Start 2P'">Play Animal Tap</h1>
+  <br><br>
+  <table style="width:100%;">
+    <tr>
+      <td style="text-align: center;">
+       <figure>
+         <a href="Animal Tap/index.html">
+           <img  style="width:40%; border: 4px dashed white;" src="images/spider tap.jpg" />
+         </a>
+       </figure>
+      </td>
+      <td style="text-align: center;">
+       <figure>
+         <a href="Animal Tap/index.html">
+           <img style="width:40%; border: 4px dashed white;" src="images/chameleon tap.jpg"  />
+         </a>
+       </figure>
+      </td>
+      <td style="text-align: center;">
+       <figure>
+         <a href="Animal Tap/index.html">
+           <img  style="width:40%; border: 4px dashed white;" src="images/racoon tap.jpg" />
+         </a>
+       </figure>
+      </td>
+      <td style="text-align: center;">
+       <figure>
+         <a href="Animal Tap/index.html">
+           <img  style="width:40%; border: 4px dashed white;" src="images/platypus tap.jpg" />
+         </a>
+       </figure>
+      </td>
+     </tr>
+   
+   </table>
+</div>
+<br><br><br><br>
+<!--ANIMAL TAP -->
+<hr>
+<h1 align="center" id="conservation" style="color:black;">VIEW BY CONSERVATION STATUS</h1>
+
+
+<div align="center">
+<table>
+    <tr>
+      <td style="text-align: center;">
+       <figure>
+         <a href="Classification/endangered.html">
+           <img src="images/endangered.jpg" />
+         </a>
+         <figcaption style="font-size:20px; color:yellow;">ENDANGERED</figcaption>
+       </figure>
+      </td>
+      <td style="text-align: center;">
+       <figure>
+         <a href="Classification/some endangered.html">
+           <img src="images/some endangered.jpg" />
+         </a>
+         <figcaption style="font-size:20px; color:yellow;">SOME ENDANGERED</figcaption>
+       </figure>
+      </td>
+      <td style="text-align: center;">
+       <figure>
+         <a href="Classification/threatened.html">
+           <img src="images/threatened.jpg" />
+         </a>
+         <figcaption style="font-size:20px; color:yellow;">THREATENED</figcaption>
+       </figure>
+      </td>
+     </tr>
+   </table>
+</div>
+<div align="center">
+<br><br><br><br>
+<table>
+    <tr>
+      <td style="text-align: center;">
+       <figure>
+         <a href="Classification/some threatened.html">
+           <img src="images/some threatened.jpg" />
+         </a>
+         <figcaption style="font-size:20px; color:yellow;">SOME THREATENED</figcaption>
+       </figure>
+      </td>
+      <td style="text-align: center;">
+       <figure>
+         <a href="Classification/stable.html">
+           <img src="images/stable.jpg" />
+         </a>
+         <figcaption style="font-size:20px; color:yellow;">STABLE</figcaption>
+       </figure>
+      </td>
+      
+     </tr>
+   </table>
+   <br><br><br><br>
+
+   <!--INDIAN MAP -->
+   <table>
+    <tr>
+      <td style="text-align: center;">
+       <figure>
+         <a href="Classification/indian conservation.html">
+           <img src="images/india map.jpg" />
+         </a>
+         <figcaption style="font-size:20px; color:yellow;">INDIAN CONSERVATION</figcaption>
+       </figure>
+      </td>
+     
+     </tr>
+   </table>
+<!--INDIAN MAP -->
+   </div>
+<br><br>
+
+
+
+<div class="slideshow-container">
+<hr>
+<!--facts started-->
+
+<h1 align="center" id="facts" style="font-size:40px; color:cyan;">FACTS</h1>
+
+<div class="mySlides">
+<a href="Animals/lion.html"><img  src="images/lion1.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">A lion's roar can be heard from as far as 5 miles away.</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/koala.html"><img  src="images/koala1.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Koalas can sleep up to 18 hours a day</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/emu.html"><img  src="images/emu2.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Emus are the second largest bird in the world.</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/jaguar.html"><img  src="images/jaguar2.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Jaguars Are Skilled Swimmers</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/oryx.html"><img  src="images/oryx4.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Oryx can survive long period without water (even couple of weeks).</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/komodo.html"><img  src="images/komodo3.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Komodo Dragons Are Also Known As Oras.</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/fossa.html"><img  src="images/fossa2.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Fossas are the top predator in Madagascar</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/panda.html"><img  src="images/panda2.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Giant pandas spend 10-16 hours a day feeding, mainly on bamboo.</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/racoon.html"><img  src="images/racoon4.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Raccoons are smart animals with a great memory and a high IQ. They are excellent learners. 
+</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/gharial.html"><img  src="images/gharial3.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Gharial Legs Are So Weak That They Can't Even Lift Their Bellies Off The Ground.</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/frog.html"><img  src="images/frog3.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Poison dart frogs are toxic due to the secretion of alkaloid toxins through glands in their skin.</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/giraffe.html"><img  src="images/giraffe3.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Giraffes only need 5 to 30 minutes of sleep in a 24-hour period!</figcaption>
+</div>
+
+ 
+<div class="mySlides">
+<a href="Animals/spider.html"><img  src="images/spider5.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">There are approximately 900 species of tarantula in the family Theraphosidae.</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/hippo.html"><img  src="images/hippo1.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Hippos can't swim or float! They walk or stand on surfaces below the water like sandbanks.
+</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/polar bear.html"><img  src="images/polar bear1.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Less Than 2% Of Polar Bear Hunts Are Successful</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/baboon.html"><img  src="images/baboon3.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Baboons are very strong animals and have sharp canine teeth similar in length to lions.</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/platypus.html"><img  src="images/platypus4.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Platypuses Don't Have Stomachs They Have A Gullet That Connects Directly To Their Intestines.
+</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/anaconda.html"><img  src="images/anaconda1.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">The Green Anaconda Is The World's Heaviest Snake, But Not The Longest.</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/chameleon.html"><img  src="images/chameleon1.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">the Tongue of Jackson's chameleon is usually 1/5th of its body length (that would be like a 6-foot tall person having a tongue that's 9-feet long)</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/harpy eagle.html"><img  src="images/harpy eagle4.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">A harpy eagle's wingspan ranges from 5.9 to 7.4 feet (176 to 224 cm).</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/hummingbird.html"><img  src="images/hummingbird2.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Hummingbirds are the only birds that can fly backwards</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/iguana.html"><img  src="images/iguana5.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Iguana has strong jaws with sharp teeth. They have very long and sharp tail that is usually half of the body size.</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/orangutan.html"><img  src="images/orangutan5.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Orangutans have an arm span of about 2.2 m (over 7 ft) from fingertip to fingertip. </figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/owl.html"><img  src="images/owl4.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Burrowing Owls have a higher tolerance for carbon dioxide than other birds</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/peacock.html"><img  src="images/peacock3.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Peacocks Take 3 Years to Grow Their Tail Feathers</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/porcupine.html"><img  src="images/porcupine2.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Porcupine vision is poor, but they have an excellent sense of smell.</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/reindeer.html"><img  src="images/reindeer2.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Males Reindeer weigh 143 to 529 lbs. (65 to 240 kilograms), and females weigh 121 to 308 lbs. (55 to 140 kg).</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/sealion.html"><img  src="images/sealion4.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">California sea lions are the fastest of all seals or sea lions, swimming at top speeds of 25 miles per hour (40 kmph).</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/tortoise.html"><img  src="images/tortoise1.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">The largest recorded Galapagos Tortoise was nearly 6 feet long and weighed 919 pounds.</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/toucan.html"><img  src="images/toucan2.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Toucans are born blind.</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/crane.html"><img  src="images/crane5.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Cranes are powerful flyers, with some having the ability to fly over the Himalayas.</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/gecko.html"><img  src="images/gecko2.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Gecko's Eyes Are 350 Times More Sensitive to Light Than Human Eyes</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/cock of rock.html"><img  src="images/cock of rock2.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">The Andean cock-of-the-rock is the national bird of Peru.</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/alligator.html"><img  src="images/alligator2.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">An Alligator's Stomach Can Dissolve Bones.</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/cassowary.html"><img  src="images/cassowary1.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">cassowary's can jump 5 feet off the ground</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/tapir.html"><img  src="images/tapir1.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Tapir's Are Exceptional Swimmers</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/armadillo.html"><img  src="images/armadillo1.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Armadillos Are Closely Related to Sloths and Anteaters</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/pit viper.html"><img  src="images/pit viper2.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">a pit viper can reach lengths of up to 6 feet, responsible for more than half of all venomous bites. can lead to infection, amputation, and death.</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/leoshark.html"><img  src="images/leoshark1.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;"> leopard sharks don't have spots like the animal they are named after. It is sometimes called a cat shark.</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/babirusa.html"><img  src="images/babirusa1.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">The wild population of babirusa's is estimated to be less than 10,000.</figcaption>
+</div>
+
+
+
+<div class="mySlides">
+<a href="Animals/meerkat.html"><img  src="images/meerkat4.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Meerkats are immune to venom</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/mountainlion.html"><img  src="images/mountainlion1.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">mountain lion can jump 15 feet high and 40 feet in distance</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/bear.html"><img  src="images/bear1.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">The Andean bear is also known as the spectacled Bear, live in the Andes Mountains. (south america)
+</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/ant.html"><img  src="images/ant1.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;"> leafcutter ant's Can Carry 50 Times Their Weight</figcaption>
+</div> 
+
+
+<div class="mySlides">
+<a href="Animals/flamingo.html"><img  src="images/flamingo2.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">The flamingo is the national bird of The Bahamas.</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/snowleo.html"><img  src="images/snowleo1.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">snow leopard cannot roar</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/cockatoo.html"><img  src="images/cockatoo3.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">there are only 2000 estimated palm cockatoo's left in the wild</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/artic fox.html"><img  src="images/artic fox5.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Artic fox can survive frigid Arctic temperatures as low as -58 degree F</figcaption>
+</div>
+
+
+
+<div class="mySlides">
+<a href="Animals/crab.html"><img  src="images/crab4.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;"> A 9-pound coconut crab has a crushing force of 3,300 newtons</figcaption>
+</div>
+
+
+
+<div class="mySlides">
+<a href="Animals/hyena.html"><img  src="images/hyena4.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Hyena's has a bite force up to 1,000 pounds of force per square inch.</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/goliath.html"><img  src="images/goliath2.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">The Goliath bird-eating spider is one of the largest spiders in the world.They can weigh up to 175 g (6.2 oz).</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/honey pot.html"><img  src="images/honey pot2.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Honeypot ants measure anywhere from ¼ to ½-inch long. However, their size significantly expands when they devour food. </figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/lizard.html"><img  src="images/lizard4.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">The biggest lizard is the Komodo dragon. </figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/mole.html"><img  src="images/mole2.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;"> Naked mole-rats don't drink water.</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/newt.html"><img  src="images/newt3.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Newts have the ability to regenerate limbs, eyes, spinal cords, hearts, intestines, and upper and lower jaws!</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/salamander.html"><img  src="images/salamander4.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Salamanders are cannibals.</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/manatee.html"><img  src="images/manatee2.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">The closest living relatives to the manatee are the elephant and the hyrax. </figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/cheetah.html"><img  src="images/cheetah1.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Cheetahs Don't Roar, They Meow and Purr.</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/rhino.html"><img  src="images/rhino5.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Rhinos can reach speeds of up to 30 miles per hour.</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/gorilla.html"><img  src="images/gorilla3.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Gorillas live around 35 years</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/gila.html"><img  src="images/gila2.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">The Gila monster is one of only a few poisonous lizards in the world. </figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/sloth.html"><img  src="images/sloth3.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">It takes sloths 30 days to digest a leaf</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/penguin.html"><img  src="images/penguin1.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">The African penguins can hold their breath over 2 minutes and dive over 400 feet deep!</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/cichlid.html"><img  src="images/cichlids1.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">With up to 2,000 different species, cichlids fish comes in so many unique patterns and colors that it is almost impossible to find any defining characteristic. </figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/tiger.html"><img  src="images/tiger1.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Tigers are good swimmers and can swim up to 6 kilometres.</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/scorpion.html"><img  src="images/scorpion3.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">They Glow In UV Light, Some Scorpions Can Go a Year Without Food</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/archer.html"><img  src="images/archer4.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">archerfish's mouth is like a squirt gun,it can shoot a jet of water at its target for up to 7 in (2 m), and it can shoot seven streams of water with one mouthful.</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/whale.html"><img  src="images/whale3.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;"> North Atlantic right whales travel more than 1,000 miles (1,609 km) between calving grounds in the U.S. Southeast and feeding grounds in the U.S. Northeast and Canada.</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/dolphin.html"><img  src="images/dolphin2.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Dolphins don't drink sea water. They get the water they need from the fish they eat.</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/macaw.html"><img  src="images/macaw4.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Almost all macaw species are either threatened, critically endangered or extinct</figcaption>
+</div>
+
+
+<div class="mySlides">
+<a href="Animals/hammerhead.html"><img  src="images/hammerhead1.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Great hammerhead sharks are believed to be cannibalistic, eating their own species</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/kangaroo.html"><img  src="images/kangaroo4.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Some Kangaroos Can Hop 25 Feet</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/walrus.html"><img  src="images/walrus3.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Walrus can dive up to 90 m and stay underwater for long periods of time  up to 30 minutes!</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/pangolin.html"><img  src="images/pangolin1.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">In China and Vietnam, pangolins are highly prized by consumers for their meat and their unique scales.</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/manta.html"><img  src="images/manta3.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">manta ray flies sometimes 3 or 4 at time and reaching a height of 9 feet above the water, before returning to earth with a loud splash</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/millipede.html"><img  src="images/millipede4.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Millipedes Were the First Animals to Live on Land</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/sawfish.html"><img  src="images/sawfish4.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">sawfish can reach upto 7 to 7.6 m (23–25 ft), and weigh as much as 500–600 kg (1,102–1,323 lb)</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/anteater.html"><img  src="images/anteater4.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Anteater's Have the Lowest Body Temperature of Any Mammal.</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/beluga.html"><img  src="images/beluga2.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">The white colouration of beluga wahle is an adaptation to Arctic which allows them to camouflage in the polar ice </figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/shrew.html"><img  src="images/shrew4.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Elephant shrew is one of the fastest small mammals,recorded to reach speeds of 28.8 kilometres per hour (17.9 mph)</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/vanquita.html"><img  src="images/vanquita4.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">There are now fewer than 10 vaquitas left, with a total population decline of 98.6% since 2011.</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/bison.html"><img  src="images/bison2.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">The plains bison is the largest land mammal in North America</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/angler.html"><img  src="images/angler1.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">The anglerfish can extend both its jaw and its stomach to an incredible size, allowing it to swallow prey twice the size of its entire body.</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/horseshoe.html"><img  src="images/horseshoe3.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Horseshoe crab blood is bright blue. It contains important immune cells that are exceptionally sensitive to toxic bacteria. </figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/puffin.html"><img  src="images/puffin5.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">A puffin's beak changes colour during the year.</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/jellyfish.html"><img  src="images/jellyfish2.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">among the deadliest marine animals in the world, box jellyfish are responsible for over 60 deaths in the last 100 years</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/starfish.html"><img  src="images/starfish1.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Starfish have no brain neither blood.</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/harpseal.html"><img  src="images/harpseal1.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Harpseals hunt for fish and crustaceans at 300 feet (90 meters) and may dive to nearly 1,000 feet (300 meters). </figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/seahorse.html"><img  src="images/seahorse4.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Seahorses have superb camouflage capabilities </figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/emperor.html"><img  src="images/emperor3.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Emperor penguins are the world's largest penguins. The flightless birds stand up to 1.2 meters (4 feet) tall.</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/whitetiger.html"><img  src="images/whitetiger1.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">There are only around 200 white tigers left in the world, according to the Indian Tiger Welfare Society.</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/mantis.html"><img  src="images/mantis4.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">praying mantis Can Turn Their Heads a Full 180 Degrees</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/cuttle.html"><img  src="images/cuttle1.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">The cuttlefish has three hearts, with two pumping blood to its large gills and one circulating the oxygenated blood to the rest of its body.</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/bushviper.html"><img  src="images/bushviper4.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">The bush viper contains neurotoxic venom Also, there is no antidote available for the  bush viper bite.</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/shrimp.html"><img  src="images/shrimp1.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">The mantis shrimp can punch with the speed of a .22 caliber bullet triggering acceleration over 60mph</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/stag.html"><img  src="images/stag2.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">Stag beetles are slow-moving herbivores that climb well and can live upto 1 to 2 years</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/eel.html"><img  src="images/eel1.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">electric eel can generate a power of 600 volts, which is 5 time stronger than the electricity generated in the standard US wall socket.</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/wolverine.html"><img  src="images/wolverine5.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">wolverine has bite force of 224 Newtons.</figcaption>
+</div>
+
+<div class="mySlides">
+<a href="Animals/orca.html"><img  src="images/orca1.jpg" style=" margin-right:15px; border-radius: 30px; width: 266px; height: 126px; border:solid 5px white;"></a>
+<figcaption style="font-size:30px; color: white;">Did You know?</figcaption><br>
+<figcaption style="font-size:30px;">A male orca can be nearly 10 metres in length and weight upto 10 tons (10,000kg).</figcaption>
+</div>
+<!--facts ended-->
+
+
+
+<a class="prev" onclick="plusSlides(-1)">&#x25C0;</a>
+<a class="next" onclick="plusSlides(1)">&#x25BA;</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "")
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</div>
+</div>
+   
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+        // Transition effect for navbar 
+        $(window).scroll(function() {
+          // checks if window is scrolled more than 500px, adds/removes solid class
+          if($(this).scrollTop() > 700) { 
+              $('.navbar').addClass('solid');
+          } else {
+              $('.navbar').removeClass('solid');
+          }
+        });
+});
+</script>
+
+</body>
+</html>

@@ -15,4 +15,4 @@ Ready to dive in? Here’s how to set up the project locally:
 
 2. **Problem Statement**📝
 
-   ### Development of a Centralized Platform for Wildlife, Biodiversity, and Conservation Projects across India.
+   ### Development of a Centralized Platform for Wildlife, Biodiversity, and Conservation Projects across India. 
