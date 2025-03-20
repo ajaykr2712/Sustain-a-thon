@@ -1,0 +1,16 @@
+| WLS/NP/TR Name                       | Wikipedia Link                                              | NGO Name                               | NGO Website                                                |
+|--------------------------------------|------------------------------------------------------------|----------------------------------------|-----------------------------------------------------------|
+| Kambalakonda WLS                      | https://en.wikipedia.org/wiki/Kambalakonda_Wildlife_Sanctuary | ATREE                                  | https://www.atree.org/                                      |
+| Papikonda NP                         | https://en.wikipedia.org/wiki/Papikonda_National_Park       | Unspecified                            | Unspecified                                                |
+| Kolleru Bird Sanctuary               | https://en.wikipedia.org/wiki/Kolleru_Lake                  | Unspecified                            | Unspecified                                                |
+| Coringa WLS                          | https://en.wikipedia.org/wiki/Coringa_Wildlife_Sanctuary    | Eastern Ghats Wildlife Society         | https://eghats.org/                                         |
+| Krishna WLS                          | https://en.wikipedia.org/wiki/Krishna_Wildlife_Sanctuary    | Hyderabad Tiger Conservation Society  | https://hyticos.wordpress.com/                              |
+| Nagarjunasagar Srisailam TR          | https://en.wikipedia.org/wiki/Nagarjunsagar-Srisailam_Tiger_Reserve | ATREE                              | https://www.atree.org/                                      |
+| Gundla Brahmeshwaram WLS             | https://en.wikipedia.org/wiki/Gundla_Brahmeswaram_Wildlife_Sanctuary | Kalpavriksh                         | https://kalpavriksh.org/nellapattu-vedurapattu-villages/     |
+| Rollapadu WLS                        | https://en.wikipedia.org/wiki/Rollapadu_Wildlife_Sanctuary  | SCINdeA                                | https://scindea.org/                                        |
+| Sri Lankamalleshwara WLS             | Not available on Wikipedia                                 | Unspecified                            | Unspecified                                                |
+| Sri Penusila Narasimha Swamy WLS     | Not available on Wikipedia                                 | Unspecified                            | Unspecified                                                |
+| Nelapattu Bird Sanctuary             | https://en.wikipedia.org/wiki/Nelapattu_Bird_Sanctuary      | Kalpavriksh                            | https://kalpavriksh.org/nellapattu-vedurapattu-villages/     |
+| Sri Venkateshwara WLS                | https://en.wikipedia.org/wiki/Sri_Venkateswara_National_Park | SCINdeA                                | https://scindea.org/                                        |
+| Pulicat Lake Bird Sanctuary          | https://en.wikipedia.org/wiki/Pulicat_Lake_Bird_Sanctuary   | Eastern Ghats Wildlife Society         | https://eghats.org/                                         |
+| Kaundinya WLS                        | https://en.wikipedia.org/wiki/Kaundinya_Wildlife_Sanctuary  | ATREE                                  | https://www.atree.org/                                      |
