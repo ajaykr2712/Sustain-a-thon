@@ -1,0 +1,8 @@
+| WLS/NP Name                    | Wikipedia Link                                                                | NGO                          | NGO Website                                |
+|---------------------------------|-------------------------------------------------------------------------------|------------------------------|--------------------------------------------|
+| Sathyamangalam WLS               | [Sathyamangalam Wildlife Sanctuary](https://en.wikipedia.org/wiki/Sathyamangalam_Wildlife_Sanctuary) | Tamil Nadu Forest Department | [forests.tn.gov.in](http://forests.tn.gov.in) |
+| Mudumalai WLS                   | [Mudumalai National Park](https://en.wikipedia.org/wiki/Mudumalai_National_Park) | Mudumalai Conservation Trust | [mudumalaitrust.org](https://www.mudumalaitrust.org) |
+| Kalakad-Mundanthurai TR         | [Kalakad Mundanthurai Tiger Reserve](https://en.wikipedia.org/wiki/Kalakad_Mundanthurai_Tiger_Reserve) | Wild Tiger Foundation        | [wildtiger.org](https://www.wildtiger.org)  |
+| Point Calimere Sanctuary         | [Point Calimere Wildlife and Bird Sanctuary](https://en.wikipedia.org/wiki/Point_Calimere_Wildlife_and_Bird_Sanctuary) | Nature Conservation Society  | [natureconservation.org](https://www.natureconservation.org) |
+| Vaduvoor Bird Sanctuary         | [Vaduvoor Bird Sanctuary](https://en.wikipedia.org/wiki/Vaduvoor_Bird_Sanctuary) | Tamil Nadu Bird Society       | [tnbs.org](https://www.tnbs.org)            |
+| Karikili Bird Sanctuary         | [Karikili Bird Sanctuary](https://en.wikipedia.org/wiki/Karikili_Bird_Sanctuary) | Tamil Nadu Bird Conservation Society | [tnbcs.org](https://www.tnbcs.org)         |

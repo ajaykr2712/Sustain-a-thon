@@ -1,0 +1,9 @@
+| WLS/NP Name                    | Wikipedia Link                                                                | NGO                          | NGO Website                                |
+|---------------------------------|-------------------------------------------------------------------------------|------------------------------|--------------------------------------------|
+| Aralam WLS                      | [Aralam Wildlife Sanctuary](https://en.wikipedia.org/wiki/Aralam_Wildlife_Sanctuary) | Kerala Forest Development Corporation | [kfdc.org](https://www.kfdc.org)           |
+| Kottiyoor WLS                    | [Kottiyoor Wildlife Sanctuary](https://en.wikipedia.org/wiki/Kottiyoor_Wildlife_Sanctuary) | Kerala Wildlife Conservation Foundation | [kwcf.org](https://www.kwcf.org)            |
+| Wayanad WLS                     | [Wayanad Wildlife Sanctuary](https://en.wikipedia.org/wiki/Wayanad_Wildlife_Sanctuary) | Wayanad Wildlife Sanctuary Trust | [wwst.org](https://www.wwst.org)           |
+| Silent Valley NP                 | [Silent Valley National Park](https://en.wikipedia.org/wiki/Silent_Valley_National_Park) | Silent Valley Conservation Society | [silentvalley.org](https://www.silentvalley.org) |
+| Periyar NP                      | [Periyar National Park](https://en.wikipedia.org/wiki/Periyar_National_Park) | The Periyar Foundation       | [periyarfoundation.org](https://www.periyarfoundation.org) |
+| Thattekad WLS                    | [Thattekad Bird Sanctuary](https://en.wikipedia.org/wiki/Thattekad_Bird_Sanctuary) | Kerala State Biodiversity Board | [ksbb.org](https://www.ksbb.org)           |
+| Peppara WLS                     | [Peppara Wildlife Sanctuary](https://en.wikipedia.org/wiki/Peppara_Wildlife_Sanctuary) | Kerala Biodiversity Museum   | [kbms.in](https://www.kbms.in)             |

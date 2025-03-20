@@ -1,0 +1,10 @@
+| WLS/NP Name                    | Wikipedia Link                                                                | NGO                          | NGO Website                                |
+|---------------------------------|-------------------------------------------------------------------------------|------------------------------|--------------------------------------------|
+| Bannerghatta NP                 | [Bannerghatta National Park](https://en.wikipedia.org/wiki/Bannerghatta_National_Park) | Bannerghatta Biological Park | [bbp.org](https://www.bbp.org)              |
+| Bandipur NP                     | [Bandipur National Park](https://en.wikipedia.org/wiki/Bandipur_National_Park) | Wildlife Conservation Society India | [wcsi.org.in](http://wcsi.org.in)           |
+| Bhadra WLS                      | [Bhadra Wildlife Sanctuary](https://en.wikipedia.org/wiki/Bhadra_Wildlife_Sanctuary) | Bhadra Foundation            | [bhadrafoundation.org](http://bhadrafoundation.org) |
+| Cauvery WLS                     | [Cauvery Wildlife Sanctuary](https://en.wikipedia.org/wiki/Cauvery_Wildlife_Sanctuary) | Nature Conservation Foundation | [ncfindia.org](https://www.ncfindia.org)    |
+| Rajiv Gandhi NP                 | [Rajiv Gandhi National Park](https://en.wikipedia.org/wiki/Rajiv_Gandhi_National_Park) | Karnataka State Forest Department | [ksfdc.org](http://ksfdc.org)              |
+| Ranganathittu Bird Sanctuary     | [Ranganathittu Bird Sanctuary](https://en.wikipedia.org/wiki/Ranganathittu_Bird_Sanctuary) | Bird Conservation Society of India | [bcsi.org.in](https://www.bcsi.org.in)      |
+| Nanda Devi NP                   | [Nanda Devi National Park](https://en.wikipedia.org/wiki/Nanda_Devi_National_Park) | Uttarakhand Forest Department | [forest.uk.gov.in](https://forest.uk.gov.in) |
+| Gudavi Bird Sanctuary           | [Gudavi Bird Sanctuary](https://en.wikipedia.org/wiki/Gudavi_Bird_Sanctuary)  | BirdLife International       | [birdlife.org](https://www.birdlife.org)    |
