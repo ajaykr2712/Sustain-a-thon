@@ -3,53 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wildlife Sanctuaries of Telangana</title>
+    <title>WILDLIFE SANCTUARIES OF TELANGANA</title>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            color: black;
+            text-align: center;
         }
-        h1 {
-            color: #333;
+        
+        /* Video Background */
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
         }
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
         .container {
             width: 90%;
             margin: 50px auto;
-            overflow-x: auto;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            background-color: #fff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            table-layout: fixed;
+            background: transparent; /* Removed white background */
+            backdrop-filter: blur(5px); /* Blur effect for readability */
+            color: white;
         }
         th, td {
             padding: 12px;
             text-align: left;
-            border-bottom: 1px solid #ddd;
-            word-wrap: break-word;
-            overflow-wrap: break-word;
-            text-overflow: ellipsis;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5); /* White border */
         }
         th {
-            background-color: #4CAF50;
-            color: rgb(18, 17, 17);
+            background-color: rgba(76, 175, 80, 0.5); /* Semi-transparent background */
         }
         tr:hover {
-            background-color: #f2f2f2;
-        }
-        .blue-column {
-            background-color: #dceeff;
-        }
-        .yellow-column {
-            background-color: #ffeb99;
+            background-color: rgba(255, 255, 255, 0.2);
         }
         a {
-            color: #007BFF;
+            color: #FFD700;
             text-decoration: none;
         }
         a:hover {
@@ -58,67 +62,74 @@
     </style>
 </head>
 <body>
-    <h1 align="center">WILDLIFE SANCTUARIES OF TELANGANA</h1>
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="../images/background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <h1>WILDLIFE SANCTUARIES OF TELANGANA</h1>
     <div class="container">
         <table>
             <thead>
                 <tr>
-                    <th class="blue-column">WLS/TR Name</th>
-                    <th class="blue-column">Wikipedia Link</th>
-                    <th class="yellow-column">NGO Name</th>
-                    <th class="yellow-column">NGO Website</th>
+                    <th>WLS/NP Name</th>
+                    <th>Wikipedia Link</th>
+                    <th>NGO</th>
+                    <th>NGO Website</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Kinnersani WLS</td>
-                    <td><a href="https://en.wikipedia.org/wiki/Kinnersani_Wildlife_Sanctuary" target="_blank">Kinnersani Wildlife Sanctuary</a></td>
-                    <td>Forests and Wildlife Protection Society</td>
-                    <td><a href="https://www.wpsi-india.org/" target="_blank">Visit</a></td>
-                </tr>
-                <tr>
-                    <td>Pocharam WLS</td>
-                    <td><a href="https://en.wikipedia.org/wiki/Pocharam_Wildlife_Sanctuary" target="_blank">Pocharam Wildlife Sanctuary</a></td>
-                    <td>Kalpavriksh</td>
-                    <td><a href="https://kalpavriksh.org/wp-content/uploads/2020/10/127-PROTECTED_AREA_UPDATE_127_June_" target="_blank">Visit</a></td>
-                </tr>
-                <tr>
-                    <td>Pakhal WLS</td>
-                    <td><a href="https://en.wikipedia.org/wiki/Pakhal_Wildlife_Sanctuary" target="_blank">Pakhal Wildlife Sanctuary</a></td>
-                    <td>Vridhi Foundation</td>
-                    <td><a href="http://www.vridhifoundation.com/activities?id=4" target="_blank">Visit</a></td>
-                </tr>
-                <tr>
-                    <td>Eturnagaram WLS</td>
-                    <td><a href="https://en.wikipedia.org/wiki/Eturnagaram_Wildlife_Sanctuary" target="_blank">Eturnagaram Wildlife Sanctuary</a></td>
-                    <td>Forests and Wildlife Protection Society</td>
-                    <td><a href="https://www.wpsi-india.org/" target="_blank">Visit</a></td>
-                </tr>
-                <tr>
-                    <td>Kawal WLS</td>
-                    <td><a href="https://en.wikipedia.org/wiki/Kawal_Tiger_Reserve" target="_blank">Kawal Tiger Reserve</a></td>
-                    <td>Kalpavriksh</td>
-                    <td><a href="https://kalpavriksh.org/wp-content/uploads/2020/10/127-PROTECTED_AREA_UPDATE_127_June_" target="_blank">Visit</a></td>
-                </tr>
-                <tr>
-                    <td>Shivaram WLS</td>
-                    <td><a href="https://en.wikipedia.org/wiki/Shivaram_Wildlife_Sanctuary" target="_blank">Shivaram Wildlife Sanctuary</a></td>
-                    <td>Vridhi Foundation</td>
-                    <td><a href="http://www.vridhifoundation.com/activities?id=4" target="_blank">Visit</a></td>
-                </tr>
-                <tr>
-                    <td>Pranahita WLS</td>
-                    <td><a href="https://en.wikipedia.org/wiki/Pranahita_Wildlife_Sanctuary" target="_blank">Pranahita Wildlife Sanctuary</a></td>
-                    <td>Forests and Wildlife Protection Society</td>
-                    <td><a href="https://www.wpsi-india.org/" target="_blank">Visit</a></td>
-                </tr>
-                <tr>
-                    <td>Amrabad TR</td>
-                    <td><a href="https://en.wikipedia.org/wiki/Amrabad_Tiger_Reserve" target="_blank">Amrabad Tiger Reserve</a></td>
-                    <td>Kalpavriksh</td>
-                    <td><a href="https://kalpavriksh.org/wp-content/uploads/2020/10/127-PROTECTED_AREA_UPDATE_127_June_" target="_blank">Visit</a></td>
-                </tr>
-            </tbody>
+              <tr>
+                  <td>Kinnersani WLS</td>
+                  <td><a href="https://en.wikipedia.org/wiki/Kinnersani_Wildlife_Sanctuary" target="_blank">Kinnersani Wildlife Sanctuary</a></td>
+                  <td>Forests and Wildlife Protection Society</td>
+                  <td><a href="https://www.wpsi-india.org/" target="_blank">Visit</a></td>
+              </tr>
+              <tr>
+                  <td>Pocharam WLS</td>
+                  <td><a href="https://en.wikipedia.org/wiki/Pocharam_Wildlife_Sanctuary" target="_blank">Pocharam Wildlife Sanctuary</a></td>
+                  <td>Kalpavriksh</td>
+                  <td><a href="https://kalpavriksh.org/wp-content/uploads/2020/10/127-PROTECTED_AREA_UPDATE_127_June_" target="_blank">Visit</a></td>
+              </tr>
+              <tr>
+                  <td>Pakhal WLS</td>
+                  <td><a href="https://en.wikipedia.org/wiki/Pakhal_Wildlife_Sanctuary" target="_blank">Pakhal Wildlife Sanctuary</a></td>
+                  <td>Vridhi Foundation</td>
+                  <td><a href="http://www.vridhifoundation.com/activities?id=4" target="_blank">Visit</a></td>
+              </tr>
+              <tr>
+                  <td>Eturnagaram WLS</td>
+                  <td><a href="https://en.wikipedia.org/wiki/Eturnagaram_Wildlife_Sanctuary" target="_blank">Eturnagaram Wildlife Sanctuary</a></td>
+                  <td>Forests and Wildlife Protection Society</td>
+                  <td><a href="https://www.wpsi-india.org/" target="_blank">Visit</a></td>
+              </tr>
+              <tr>
+                  <td>Kawal WLS</td>
+                  <td><a href="https://en.wikipedia.org/wiki/Kawal_Tiger_Reserve" target="_blank">Kawal Tiger Reserve</a></td>
+                  <td>Kalpavriksh</td>
+                  <td><a href="https://kalpavriksh.org/wp-content/uploads/2020/10/127-PROTECTED_AREA_UPDATE_127_June_" target="_blank">Visit</a></td>
+              </tr>
+              <tr>
+                  <td>Shivaram WLS</td>
+                  <td><a href="https://en.wikipedia.org/wiki/Shivaram_Wildlife_Sanctuary" target="_blank">Shivaram Wildlife Sanctuary</a></td>
+                  <td>Vridhi Foundation</td>
+                  <td><a href="http://www.vridhifoundation.com/activities?id=4" target="_blank">Visit</a></td>
+              </tr>
+              <tr>
+                  <td>Pranahita WLS</td>
+                  <td><a href="https://en.wikipedia.org/wiki/Pranahita_Wildlife_Sanctuary" target="_blank">Pranahita Wildlife Sanctuary</a></td>
+                  <td>Forests and Wildlife Protection Society</td>
+                  <td><a href="https://www.wpsi-india.org/" target="_blank">Visit</a></td>
+              </tr>
+              <tr>
+                  <td>Amrabad TR</td>
+                  <td><a href="https://en.wikipedia.org/wiki/Amrabad_Tiger_Reserve" target="_blank">Amrabad Tiger Reserve</a></td>
+                  <td>Kalpavriksh</td>
+                  <td><a href="https://kalpavriksh.org/wp-content/uploads/2020/10/127-PROTECTED_AREA_UPDATE_127_June_" target="_blank">Visit</a></td>
+              </tr>
+          </tbody>
         </table>
     </div>
 

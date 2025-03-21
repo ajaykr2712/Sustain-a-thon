@@ -1,143 +1,205 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Live Cam</title>
-	<style>
-		body{
-			background-image: url('../images/Bg.jpg');
-			background-size: cover;
-		}
-		.animals{
-   display: list-item;    
-}
+    <meta charset="utf-8">
+    <title>Scientists Info</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
 
-  a{
-    text-transform: uppercase;
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-  }
-figcaption{
-	color: white;
-}
- 
-img.hover-shadow {
-  transition: 0.3s;
-  border-radius: 30px;
+        /* Background Video */
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
 
-}
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 520px;
-  height: 260px;
-  
+        /* Content */
+        .content {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            color: aqua;
+        }
 
-}
-/*3 columns*/
-  .column1 {
-  float: left;
-  width: 45%;
-  padding: 5px;
-  height:100%; 
-}
+        h1 {
+            color: black;
+        }
 
-.row1:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-	</style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        th {
+            background: rgba(0, 0, 0, 0.7);
+            color: aqua;
+        }
+
+        a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: rgb(202, 202, 29);
+            font-size: 16px;
+        }
+
+        @media screen and (max-width: 768px) {
+            table {
+                width: 95%;
+            }
+        }
+    </style>
 </head>
 <body>
-
-<h1 style="color: blueviolet;" align="center">OUR Live CAMS</h1>
-<marquee direction="right" speed="50px"> <img src="../images/Livecam.jpg"></marquee>
-
-
-
- 
-      
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="../images/background.mp4" type="video/mp4">
+        </video>
+    </div>
     
-      
-  
-   
-<div class="row1" style="">
-  <div class="column1" style="margin-left: 5%;">
-  <ol id='list' style="list-style: none;">
-
-	<a href="../Live Cam/polar bear cam.html"><li class="animals"> <img class="hover-shadow cursor" src="../images/polar bear5.jpg" width="500" height="250">
-    <figcaption>Polar Bear Cam</figcaption></li></a><br>
-
-    <a href="../Live Cam/koala cam.html"><li class="animals"> <img class="hover-shadow cursor" src="../images/koala3.jpg" width="500" height="250">
-    <figcaption>KOALA CAM</figcaption></li></a><br>
-
-    <a href="../Live Cam/Owl cam.html"><li class="animals"> <img class="hover-shadow cursor" src="../images/owl4.jpg" width="500" height="250">
-    <figcaption>OWL CAM</figcaption></li></a><br>
-
-    <a href="../Live Cam/platypus cam.html"><li class="animals"> <img class="hover-shadow cursor" src="../images/platypus3.jpg" width="500" height="250">
-    <figcaption>PLATYPUS CAM</figcaption></li></a><br>
-
-    <a href="../Live Cam/bear cam.html"><li class="animals"> <img class="hover-shadow cursor" src="../images/bear2.jpg" width="500" height="250">
-    <figcaption>ANDEAN BEAR CAM</figcaption></li></a><br>
-
-    <a href="../Live Cam/rhino cam.html"><li class="animals"> <img class="hover-shadow cursor" src="../images/rhino2.jpg" width="500" height="250">
-    <figcaption>RHINO CAM</figcaption></li></a><br>
-
-    <a href="../Live Cam/sealion cam.html"><li class="animals"> <img class="hover-shadow cursor" src="../images/sealion1.jpg" width="500" height="250">
-    <figcaption>sealion CAM</figcaption></li></a><br>
-
-    <a href="../Live Cam/tiger cam.html"><li class="animals"> <img class="hover-shadow cursor" src="../images/tiger2.jpg" width="500" height="250">
-    <figcaption>TIGER CAM</figcaption></li></a><br>
-
-    <a href="../Live Cam/panda cam.html"><li class="animals"> <img class="hover-shadow cursor" src="../images/panda4.jpg" width="500" height="250">
-    <figcaption>PANDA CAM</figcaption></li></a><br>
-
-
-
-    
-
-    
-</ol>
-</div>
-
-
-<div class="column1" style=" margin-right: 1%;" >
- <ol id='list' style="list-style: none;" >
-    
-  <a href="../Live Cam/orangutan cam.html"><li class="animals"> <img class="hover-shadow cursor" src="../images/orangutan3.jpg" width="500" height="250">
-    <figcaption>Orangutan Cam</figcaption></li></a><br>
-
-    <a href="../Live Cam/hippo cam.html"><li class="animals"> <img class="hover-shadow cursor" src="../images/hippo3.jpg" width="500" height="250">
-    <figcaption>HIPPO CAM</figcaption></li></a><br>
-
-    <a href="../Live Cam/beluga cam.html"><li class="animals"> <img class="hover-shadow cursor" src="../images/beluga4.jpg" width="500" height="250">
-    <figcaption>beluga CAM</figcaption></li></a><br>
-
-    <a href="../Live Cam/baboon cam.html"><li class="animals"> <img class="hover-shadow cursor" src="../images/baboon5.jpg" width="500" height="250">
-    <figcaption>BABOON CAM</figcaption></li></a><br>
-
-    <a href="../Live Cam/alligator cam.html"><li class="animals"> <img class="hover-shadow cursor" src="../images/alligator3.jpg" width="500" height="250">
-    <figcaption>Alligator CAM</figcaption></li></a><br>
-
-    <a href="../Live Cam/penguin cam.html"><li class="animals"> <img class="hover-shadow cursor" src="../images/penguin5.jpg" width="500" height="250">
-    <figcaption>African penguin CAM</figcaption></li></a><br>
-
-    <a href="../Live Cam/sloth cam.html"><li class="animals"> <img class="hover-shadow cursor" src="../images/sloth3.jpg" width="500" height="250">
-    <figcaption>sloth CAM</figcaption></li></a><br>
-
-     <a href="../Live Cam/manta cam.html"><li class="animals"> <img class="hover-shadow cursor" src="../images/manta4.jpg" width="500" height="250">
-    <figcaption>manta ray CAM</figcaption></li></a><br>
-
-    
-
-    
-</ol>
-</div>
-</div>
-
+    <div class="content">
+        <h1>SCIENTISTS INFO</h1>
+        <table border="1" cellpadding="5" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>State</th>
+              <th>Wikipedia Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Anwaruddin Choudhury</td>
+              <td>Assam</td>
+              <td><a href="https://en.wikipedia.org/wiki/Anwaruddin_Choudhury">Anwaruddin Choudhury</a></td>
+            </tr>
+            <tr>
+              <td>Krithi Karanth</td>
+              <td>Karnataka</td>
+              <td><a href="https://en.wikipedia.org/wiki/Krithi_Karanth">Krithi Karanth</a></td>
+            </tr>
+            <tr>
+              <td>Sanjay Gubbi</td>
+              <td>Karnataka</td>
+              <td><a href="https://en.wikipedia.org/wiki/Sanjay_Gubbi">Sanjay Gubbi</a></td>
+            </tr>
+            <tr>
+              <td>Ullas Karanth</td>
+              <td>Karnataka</td>
+              <td><a href="https://en.wikipedia.org/wiki/Ullas_Karanth">Ullas Karanth</a></td>
+            </tr>
+            <tr>
+              <td>Valmik Thapar</td>
+              <td>Rajasthan</td>
+              <td><a href="https://en.wikipedia.org/wiki/Valmik_Thapar">Valmik Thapar</a></td>
+            </tr>
+            <tr>
+              <td>Ravi Chellam</td>
+              <td>Tamil Nadu</td>
+              <td><a href="https://en.wikipedia.org/wiki/Ravi_Chellam">Ravi Chellam</a></td>
+            </tr>
+            <tr>
+              <td>M. K. Ranjitsinh</td>
+              <td>Madhya Pradesh</td>
+              <td><a href="https://en.wikipedia.org/wiki/M._K._Ranjitsinh">M. K. Ranjitsinh</a></td>
+            </tr>
+            <tr>
+              <td>Romulus Whitaker</td>
+              <td>Tamil Nadu</td>
+              <td><a href="https://en.wikipedia.org/wiki/Romulus_Whitaker">Romulus Whitaker</a></td>
+            </tr>
+            <tr>
+              <td>Bittu Sahgal</td>
+              <td>Maharashtra</td>
+              <td><a href="https://en.wikipedia.org/wiki/Bittu_Sahgal">Bittu Sahgal</a></td>
+            </tr>
+            <tr>
+              <td>Raman Sukumar</td>
+              <td>Karnataka</td>
+              <td><a href="https://en.wikipedia.org/wiki/Raman_Sukumar">Raman Sukumar</a></td>
+            </tr>
+            <tr>
+              <td>Shekar Dattatri</td>
+              <td>Tamil Nadu</td>
+              <td><a href="https://en.wikipedia.org/wiki/Shekar_Dattatri">Shekar Dattatri</a></td>
+            </tr>
+            <tr>
+              <td>Purnima Devi Barman</td>
+              <td>Assam</td>
+              <td><a href="https://en.wikipedia.org/wiki/Purnima_Devi_Barman">Purnima Devi Barman</a></td>
+            </tr>
+            <tr>
+              <td>Sreedhar Vijayakrishnan</td>
+              <td>Kerala</td>
+              <td><a href="https://en.wikipedia.org/wiki/Sreedhar_Vijayakrishnan">Sreedhar Vijayakrishnan</a></td>
+            </tr>
+            <tr>
+              <td>Debadityo Sinha</td>
+              <td>Uttar Pradesh</td>
+              <td><a href="https://en.wikipedia.org/wiki/Debadityo_Sinha">Debadityo Sinha</a></td>
+            </tr>
+            <tr>
+              <td>M. Krishnan</td>
+              <td>Tamil Nadu</td>
+              <td><a href="https://en.wikipedia.org/wiki/M._Krishnan">M. Krishnan</a></td>
+            </tr>
+            <tr>
+              <td>Kartik Shanker</td>
+              <td>Karnataka</td>
+              <td><a href="https://en.wikipedia.org/wiki/Kartik_Shanker">Kartik Shanker</a></td>
+            </tr>
+            <tr>
+              <td>George Schaller</td>
+              <td>International (worked extensively in India)</td>
+              <td><a href="https://en.wikipedia.org/wiki/George_Schaller">George Schaller</a></td>
+            </tr>
+            <tr>
+              <td>Madhav Gadgil</td>
+              <td>Maharashtra</td>
+              <td><a href="https://en.wikipedia.org/wiki/Madhav_Gadgil">Madhav Gadgil</a></td>
+            </tr>
+            <tr>
+              <td>Erach Bharucha</td>
+              <td>Maharashtra</td>
+              <td><a href="https://en.wikipedia.org/wiki/Erach_Bharucha">Erach Bharucha</a></td>
+            </tr>
+            <tr>
+              <td>Faiyaz A. Khudsar</td>
+              <td>Delhi</td>
+              <td><a href="https://en.wikipedia.org/wiki/Faiyaz_A._Khudsar">Faiyaz A. Khudsar</a></td>
+            </tr>
+          </tbody>
+        </table>
+        
+    </div>
 </body>
-  
 </html>
-

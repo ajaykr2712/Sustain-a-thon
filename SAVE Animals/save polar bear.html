@@ -8,13 +8,28 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            color: black;
+            text-align: center;
         }
-        h1 {
-            color: #333;
+        
+        /* Video Background */
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
         }
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
         .container {
             width: 90%;
             margin: 50px auto;
@@ -22,29 +37,23 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            background-color: #fff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background: transparent; /* Blur effect */
+            backdrop-filter: blur(5px);
+            color: white;
         }
         th, td {
             padding: 12px;
             text-align: left;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
         }
         th {
-            background-color: #4CAF50;
-            color: rgb(18, 17, 17);
+            background-color: rgba(76, 175, 80, 0.5);
         }
         tr:hover {
-            background-color: #f2f2f2;
-        }
-        .blue-column {
-            background-color: #dceeff;
-        }
-        .yellow-column {
-            background-color: #ffeb99;
+            background-color: rgba(255, 255, 255, 0.2);
         }
         a {
-            color: #007BFF;
+            color: #FFD700;
             text-decoration: none;
         }
         a:hover {
@@ -53,15 +62,22 @@
     </style>
 </head>
 <body>
-    <h1 align="center">WILDLIFE SANCTUARIES OF ANDHRA PRADESH</h1>
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="../images/background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <h1>WILDLIFE SANCTUARIES OF ANDHRA PRADESH</h1>
     <div class="container">
         <table>
             <thead>
                 <tr>
-                    <th class="blue-column">WLS/NP Name</th>
-                    <th class="blue-column">Wikipedia Link</th>
-                    <th class="yellow-column">NGO Name</th>
-                    <th class="yellow-column">NGO Website</th>
+                    <th>WLS/NP Name</th>
+                    <th>Wikipedia Link</th>
+                    <th>NGO</th>
+                    <th>NGO Website</th>
                 </tr>
             </thead>
             <tbody>
@@ -96,63 +112,15 @@
                     <td><a href="https://hyticos.wordpress.com/" target="_blank">Visit</a></td>
                 </tr>
                 <tr>
-                    <td>Nagajunasagar Srisailam TR</td>
-                    <td><a href="https://en.wikipedia.org/wiki/Nagarjunsagar-Srisailam_Tiger_Reserve" target="_blank">Nagajunasagar-Srisailam Tiger Reserve</a></td>
-                    <td>ATREE</td>
-                    <td><a href="https://www.atree.org/" target="_blank">Visit</a></td>
+                    <td>Nelapattu Bird Sanctuary</td>
+                    <td><a href="https://en.wikipedia.org/wiki/Nelapattu_Bird_Sanctuary" target="_blank">Nelapattu Bird Sanctuary</a></td>
+                    <td>Kalpavriksh</td>
+                    <td><a href="https://kalpavriksh.org/nellapattu-vedurapattu-villages/" target="_blank">Visit</a></td>
                 </tr>
-                <tr>
-                  <td>Gundla Brahmeshwaram WLS</td>
-                  <td><a href="https://en.wikipedia.org/wiki/Gundla_Brahmeswaram_Wildlife_Sanctuary" target="_blank">Gundla Brahmeshwaram Wildlife Sanctuary</a></td>
-                  <td>Kalpavriksh</td>
-                  <td><a href="https://kalpavriksh.org/nellapattu-vedurapattu-villages/" target="_blank">Visit</a></td>
-              </tr>
-              <tr>
-                  <td>Rollapadu WLS</td>
-                  <td><a href="https://en.wikipedia.org/wiki/Rollapadu_Wildlife_Sanctuary" target="_blank">Rollapadu Wildlife Sanctuary</a></td>
-                  <td>SCINdeA</td>
-                  <td><a href="https://scindea.org/" target="_blank">Visit</a></td>
-              </tr>
-              <tr>
-                  <td>Sri Lankamalleswara WLS</td>
-                  <td>Not available on Wikipedia</td>
-                  <td>Unspecified</td>
-                  <td>Unspecified</td>
-              </tr>
-              <tr>
-                  <td>Sri Penusila Narasimha Swamy WLS</td>
-                  <td>Not available on Wikipedia</td>
-                  <td>Unspecified</td>
-                  <td>Unspecified</td>
-              </tr>
-              <tr>
-                  <td>Nelapattu Bird Sanctuary</td>
-                  <td><a href="https://en.wikipedia.org/wiki/Nelapattu_Bird_Sanctuary" target="_blank">Nelapattu Bird Sanctuary</a></td>
-                  <td>Kalpavriksh</td>
-                  <td><a href="https://kalpavriksh.org/nellapattu-vedurapattu-villages/" target="_blank">Visit</a></td>
-              </tr>
-              <tr>
-                  <td>Sri Venkateshwara WLS</td>
-                  <td><a href="https://en.wikipedia.org/wiki/Sri_Venkateswara_National_Park" target="_blank">Sri Venkateswara National Park</a></td>
-                  <td>SCINdeA</td>
-                  <td><a href="https://scindea.org/" target="_blank">Visit</a></td>
-              </tr>
-              <tr>
-                  <td>Pulicat Lake Bird Sanctuary</td>
-                  <td><a href="https://en.wikipedia.org/wiki/Pulicat_Lake_Bird_Sanctuary" target="_blank">Pulicat Lake Bird Sanctuary</a></td>
-                  <td>Eastern Ghats Wildlife Society</td>
-                  <td><a href="https://eghats.org/" target="_blank">Visit</a></td>
-              </tr>
-              <tr>
-                  <td>Kaundinya WLS</td>
-                  <td><a href="https://en.wikipedia.org/wiki/Kaundinya_Wildlife_Sanctuary" target="_blank">Kaundinya Wildlife Sanctuary</a></td>
-                  <td>ATREE</td>
-                  <td><a href="https://www.atree.org/" target="_blank">Visit</a></td>
-              </tr>
-          </tbody>
-      </table>
-  </div>
+            </tbody>
+        </table>
+    </div>
 
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>

@@ -6,61 +6,125 @@
     <title>Wildlife Sanctuaries of Karnataka</title>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <style>
+        /* General Styles */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            overflow-x: hidden;
         }
+
+        /* Video Background */
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            overflow: hidden;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Overlay to Darken Video */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        /* Content */
         h1 {
-            color: #333;
+            color: yellow;
+            text-align: center;
+            position: relative;
         }
+
         .container {
             width: 90%;
             margin: 50px auto;
+            position: relative;
+            z-index: 1;
         }
+
+        /* Table Styling */
         table {
             width: 100%;
             border-collapse: collapse;
-            background-color: #fff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 1;
+            color: white;
         }
+
         th, td {
             padding: 12px;
             text-align: left;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         }
+
         th {
-            background-color: #4CAF50;
-            color: rgb(18, 17, 17);
+            background-color: rgba(76, 175, 80, 0.8);
+            color: white;
         }
+
         tr:hover {
-            background-color: #f2f2f2;
+            background-color: rgba(255, 255, 255, 0.2);
         }
+
         .blue-column {
-            background-color: #dceeff;
+            background-color: rgba(28, 160, 255, 0.4);
         }
+
         .yellow-column {
-            background-color: #ffeb99;
+            background-color: rgba(227, 197, 77, 0.4);
         }
+
         a {
-            color: #007BFF;
+            color: #FFD700;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1 align="center">WILDLIFE SANCTUARIES OF KARNATAKA</h1>
+    
+    <!-- Video Background -->
+    <div class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="../images/background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Dark Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Title -->
+    <h1>WILDLIFE SANCTUARIES OF KARNATAKA</h1>
+
+    <!-- Content -->
     <div class="container">
         <table>
             <thead>
                 <tr>
                     <th class="blue-column">WLS/NP Name</th>
                     <th class="blue-column">Wikipedia Link</th>
-                    <th class="yellow-column">NGO</th>
+                    <th class="yellow-column">NGO Name</th>
                     <th class="yellow-column">NGO Website</th>
                 </tr>
             </thead>
@@ -69,49 +133,37 @@
                     <td>Bannerghatta NP</td>
                     <td><a href="https://en.wikipedia.org/wiki/Bannerghatta_National_Park" target="_blank">Bannerghatta National Park</a></td>
                     <td>Bannerghatta Biological Park</td>
-                    <td><a href="https://bbp.org" target="_blank">Visit</a></td>
+                    <td><a href="https://bannerughattabiopark.org" target="_blank">Visit</a></td>
                 </tr>
                 <tr>
                     <td>Bandipur NP</td>
                     <td><a href="https://en.wikipedia.org/wiki/Bandipur_National_Park" target="_blank">Bandipur National Park</a></td>
                     <td>Wildlife Conservation Society India</td>
-                    <td><a href="https://wcsi.org.in" target="_blank">Visit</a></td>
+                    <td><a href="https://india.wcs.org" target="_blank">Visit</a></td>
                 </tr>
                 <tr>
                     <td>Bhadra WLS</td>
                     <td><a href="https://en.wikipedia.org/wiki/Bhadra_Wildlife_Sanctuary" target="_blank">Bhadra Wildlife Sanctuary</a></td>
                     <td>Bhadra Foundation</td>
-                    <td><a href="https://bhadrafoundation.org" target="_blank">Visit</a></td>
+                    <td><a href="https://www.conservationindia.org/tag/bhadra-wildlife-conservation-trust" target="_blank">Visit</a></td>
                 </tr>
                 <tr>
                     <td>Cauvery WLS</td>
                     <td><a href="https://en.wikipedia.org/wiki/Cauvery_Wildlife_Sanctuary" target="_blank">Cauvery Wildlife Sanctuary</a></td>
                     <td>Nature Conservation Foundation</td>
-                    <td><a href="https://ncfindia.org" target="_blank">Visit</a></td>
+                    <td><a href="https://www.ncf-india.org" target="_blank">Visit</a></td>
                 </tr>
                 <tr>
                     <td>Rajiv Gandhi NP</td>
                     <td><a href="https://en.wikipedia.org/wiki/Rajiv_Gandhi_National_Park" target="_blank">Rajiv Gandhi National Park</a></td>
                     <td>Karnataka State Forest Department</td>
-                    <td><a href="https://ksfdc.org" target="_blank">Visit</a></td>
+                    <td><a href="https://aranya.gov.in/aranyacms/(S(3yvjzz5yejfoenzzwfj0xggz))/English/Home.aspx" target="_blank">Visit</a></td>
                 </tr>
                 <tr>
                     <td>Ranganathittu Bird Sanctuary</td>
                     <td><a href="https://en.wikipedia.org/wiki/Ranganathittu_Bird_Sanctuary" target="_blank">Ranganathittu Bird Sanctuary</a></td>
                     <td>Bird Conservation Society of India</td>
-                    <td><a href="https://bcsi.org.in" target="_blank">Visit</a></td>
-                </tr>
-                <tr>
-                    <td>Nanda Devi NP</td>
-                    <td><a href="https://en.wikipedia.org/wiki/Nanda_Devi_National_Park" target="_blank">Nanda Devi National Park</a></td>
-                    <td>Uttarakhand Forest Department</td>
-                    <td><a href="https://forest.uk.gov.in" target="_blank">Visit</a></td>
-                </tr>
-                <tr>
-                    <td>Gudavi Bird Sanctuary</td>
-                    <td><a href="https://en.wikipedia.org/wiki/Gudavi_Bird_Sanctuary" target="_blank">Gudavi Bird Sanctuary</a></td>
-                    <td>BirdLife International</td>
-                    <td><a href="https://birdlife.org" target="_blank">Visit</a></td>
+                    <td><a href="https://bcsg.co.in" target="_blank">Visit</a></td>
                 </tr>
             </tbody>
         </table>

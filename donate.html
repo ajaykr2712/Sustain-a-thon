@@ -1,75 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Donate | Conservations Animal</title>
-<style>
-body {
-  font-family: times new roman;
-  font-size: 17px;
-  padding: 8px;
-  text-transform: capitalize;
-  /*background-image: url(https://www.wildlifedisease.org/personifyebusiness/portals/0/Heros/Filippo%20Castellucci%20Red%20deer%20Cervus%20elaphus.jpg);*/
-  background-image: url('images/blue bg.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-color: white;
-}
-
-li{
-  text-align: left;
-}
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate | Conservation Animal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', serif;
+        }
+        body {
+            color: white;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+            background: black; /* Fallback if video fails */
+        }
+        /* Background Video */
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        /* Main Container */
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            width: 80%;
+            margin: 5% auto;
+            flex-wrap: wrap;
+        }
+        /* Clickable Blocks */
+        .block {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid white;
+            cursor: pointer;
+            transition: 0.3s;
+            width: 300px;
+        }
+        .block:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        /* Hidden Sections */
+        .details {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid white;
+            margin: 20px auto;
+            width: 350px;
+            display: none;
+        }
+        .details ul {
+            text-align: left;
+            list-style-type: none;
+            padding: 0;
+        }
+        .details ul li {
+            margin-bottom: 10px;
+        }
+        .details a {
+            color: yellow;
+        }
+    </style>
 </head>
-
-<div align="center">
 <body>
-  <h1>DONATE </h1>
-
+    <video class="background-video" autoplay loop muted>
+        <source src="../images/backgrounds.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <h1>DONATE</h1>
+    
+    <div class="container">
+        <div class="block" onclick="toggleDetails('bank')">
+            <h2>Bank Transfer</h2>
+        </div>
+        <div class="block" onclick="toggleDetails('terms')">
+            <h2>Terms & Conditions</h2>
+        </div>
+    </div>
+    
+    <div id="bank" class="details">
+        <p><strong>Account Name:</strong> Conservation Animal</p>
+        <p><strong>IFSC Code:</strong> FIRNZCJJXXX</p>
+        <p><strong>Bank Name:</strong> First National Bank</p>
+        <p><strong>Account No:</strong> **********</p>
+        <p><strong>SWIFT Code:</strong> FIRNZAJJ</p>
+    </div>
+    
+    <div id="terms" class="details">
+        <ul>
+            <li>Payment once done cannot be refunded.</li>
+            <li>We are not responsible for cybersecurity issues.</li>
+        </ul>
+    </div>
+    
+    <script>
+        function toggleDetails(section) {
+            let element = document.getElementById(section);
+            if (element.style.display === "block") {
+                element.style.display = "none";
+            } else {
+                element.style.display = "block";
+            }
+        }
+    </script>
 </body>
-
-
-<fieldset style="height: 20%; border: none; background-image: url('images/koala4.jpg'); border: solid 14px black;">
-  <div align="right" >
-<img src="images/code.jpg" width="400" height="400" style="border: 10px solid blue; margin-top: 20px;">
-</div>
-</fieldset>
-
-
-<fieldset>
-  <p style="color: black; font-size: 20px;">BANK TRANSFER</p>
-  <ol style="color:white;">
-  <li>Account name: Conservation Animal
-  <li>IFSC CODE: FIRNZCJJXXX
-<li>Bank Name: First National Bank (a division of First Rand Bank Limited)
-<li>Account No: 62292413565
-<li>Branch / Sort Code: 204511
-<li>SWIFT Code / BIC: FIRNZAJJ or FIRNZCJJXXX
-<!--<li>Bank Head Office Address: FNB Bank City, Simmonds Street, Johannesburg, 2000
-<li>Registered Address: 27 Breda Park, Breda Street, Gardens, Cape Town, 8001, South Africa-->
-</oi>
-</fieldset>
-
-<script>
-  function a(){
-    confirm("make Payment?");
-  }
-</script>
-</div>
-</fieldset>
 </html>
-
-<fieldset style="background-color: black;"><b>TERMS AND CONDITIONS</b></fieldset>
-<fieldset style="text-align: left;">
-  <ul style="color: white;" >
-  <li>to pay Via app user needs to have updated version of the given app</li>
-  <li>payment once done cannot be refunded</li>
-  <li>ConservationsAnimal is not responsible for any invalid transcstions in case of serious problem you can contact us at <a href="mailto:animals.conservations@gmail.com" style="text-decoration: none; text-transform: none; color:lightblue;">animals.conservations@gmail.com</a></li>
-  <li>we are not resposible of collecting data of users while entering card details</li>
-  <li>We are not respossible for any kind of cybersecurity attacks</li>
-  <li>incase of transaction failure you can quit site or visit our <a href="FAQ'S.html" style="text-decoration: none; color:lightblue;">FAQ'S</a></li>
-  <li>ConservationsAnimal is not resposibile for any payment transaction handled by GOOGLE PAY OR PAYPAL</li>
-  <li>International Transactions from our websites will be charged 5% for services and tax</li>
-</ul>
-</fieldset>
-
